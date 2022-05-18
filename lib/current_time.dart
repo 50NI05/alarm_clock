@@ -59,6 +59,26 @@ class _CurrentTimeState extends State<CurrentTime> {
             // ),
           ),
         ),
+        const SizedBox(width: 20),
+        const Text('Second: '),
+        Container(
+        height: 40,
+        width: 60,
+        decoration: BoxDecoration(
+          shape: BoxShape.rectangle,
+          color: Colors.blue,
+          borderRadius: BorderRadius.circular(11)),
+          child: Center(
+            child: Text(
+              secondNow(),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 20,
+                color: Colors.white
+              ),
+            )
+          ),
+        ),
       ],
     );
   }
